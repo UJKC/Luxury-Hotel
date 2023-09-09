@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title>The Familiar reservation</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="test.css">
+    <!-- Demo CSS (No need to include it into your project) -->
+    <link rel="stylesheet" href="css/demo.css">
+
+</head>
+
+<body>
+
+    <main>
+
+        <div class="nav" id="hold"
+        style="display: flex; background-color: #623e2a; width: 100%; color: #f2f2f2; font-size: 17px;">
+        <a class="active" href="hotel.html">
+            Home
+        </a>
+        <a href="login.html">
+            Log In
+        </a>
+        <a href="test.html">
+            Booking
+        </a>
+    </div>
+        <!-- Start DEMO HTML (Use the following code into your project)-->
+        <div class="container">
+            <h1 style="color: #623e2a;">The Familiar welcomes you</h1>
+            <p>We wlcome you as our guest. And it is our honour. Please book a hotel from us and availexciting gifts and
+                discounts</p>
+            <p>Click 'Empty Cart' button to remove session cookies from browser.</p>
+            <div id="alerts"></div>
+            <div class="productcont">
+                <div class="product">
+                    <h3 class="productname">Adult 1</h3>
+                    <p>1 person above 18 years</p>
+                    <p class="price">$1000</p>
+                    <button class="addtocart">Book</button>
+                </div>
+                <div class="product">
+                    <h3 class="productname">Child 1</h3>
+                    <p>1 person below 18 years</p>
+                    <p class="price">$700</p>
+                    <button class="addtocart">Book</button>
+                </div>
+                <div class="product">
+                    <h3 class="productname">Corporate Pass</h3>
+                    <p>1 person with corporate id from associate company</p>
+                    <p class="price">$900</p>
+                    <button class="addtocart">Add To Cart</button>
+                </div>
+            </div>
+            <div class="cart-container">
+                <h2>Cart</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><strong>Product</strong></th>
+                            <th><strong>Price</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody id="carttable">
+                    </tbody>
+                </table>
+                <hr>
+                <table id="carttotals">
+                    <tr>
+                        <td><strong>Bookings</strong></td>
+                        <td><strong>Total</strong></td>
+                    </tr>
+                    <tr>
+                        <td>x <span id="itemsquantity">0</span></td>
+
+                        <td>$<span id="total">0</span></td>
+                    </tr>
+                </table>
+
+
+                <div class="cart-buttons">
+                    <button id="emptycart">Unreserve</button>
+                    <button id="checkout"><a href="payment.html"></a><a style="text-decoration: none; color: white;" href="payment.html">Reserve</a><a href="payment.html"></a></button>
+                </div>
+            </div>
+        </div>
+        <!-- partial -->
+
+        <!-- END EDMO HTML (Happy Coding!)-->
+    </main>
+
+    <script src="test.js"></script>
+</body>
+
+</html>
